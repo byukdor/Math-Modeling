@@ -1,0 +1,27 @@
+c = firstcar(b);
+if (c==0 || p(nc) > p(c))
+    nextcar(nc) = c;
+    firstcar(b) = nc;
+    if(c==0)
+        lastcar(b) = nc;
+    end
+elseif p(nc) <= p(lastcar(b))
+    nextcar(lastcar(b)) = nc;
+    nextcar(nc) = 0;
+    lastcar(b) = nc;
+else
+    ca = c;
+    c = nextcar(c);
+    if c == 0
+        nextcar(ca) = nc;
+        lastcar(b) = nc;
+    else
+        while(p(nc) <= p(c))
+            ca = c;
+            c = nextcar(c);
+        end
+        nextcar(ca) = nc;
+        nextcar(nc) = c;
+    end
+end
+    
