@@ -1,0 +1,8 @@
+ -  To Simulate One-way traffic model created by Eddie Park, please download all matlab codes that are in this folder and run
+    Traffic_Simulation.m
+
+ -  The data I used for the paper is included as an Excel file.
+ 
+ -  The code I used for the paper is Traffic_fordata.m and Traffic_datasave.m
+ 
+ -  If there is any question or bug, feel free to email eddie.park@nyu.edu
